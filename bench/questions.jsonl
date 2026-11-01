@@ -1,0 +1,150 @@
+{"id": "faits-01", "categorie": "faits", "question": "Quelle est la capitale de l'Italie ?", "attendu": ["rome"]}
+{"id": "faits-02", "categorie": "faits", "question": "Qui a peint la Joconde ?", "attendu": ["vinci"]}
+{"id": "faits-03", "categorie": "faits", "question": "En quelle année a eu lieu la prise de la Bastille ?", "attendu": ["1789"]}
+{"id": "faits-04", "categorie": "faits", "question": "Quel est le plus long fleuve de France ?", "attendu": ["loire"]}
+{"id": "faits-05", "categorie": "faits", "question": "Qui a écrit Les Misérables ?", "attendu": ["hugo"]}
+{"id": "faits-06", "categorie": "faits", "question": "Quelle est la capitale du Japon ?", "attendu": ["tokyo"]}
+{"id": "faits-07", "categorie": "faits", "question": "Combien de joueurs une équipe de football a-t-elle sur le terrain ?", "attendu": ["onze", "11"]}
+{"id": "faits-08", "categorie": "faits", "question": "Qui était Marie Curie ?", "attendu": ["physicienne", "chimiste", "radioactivite", "polonaise", "nobel"]}
+{"id": "faits-09", "categorie": "faits", "question": "Quel est le symbole chimique de l'or ?", "attendu": ["au"]}
+{"id": "faits-10", "categorie": "faits", "question": "Qui a été le premier homme à marcher sur la Lune ?", "attendu": ["armstrong"]}
+{"id": "faits-11", "categorie": "faits", "question": "Quel est le plus haut sommet des Alpes ?", "attendu": ["mont blanc"]}
+{"id": "faits-12", "categorie": "faits", "question": "Dans quel pays se trouve le Machu Picchu ?", "attendu": ["perou"]}
+{"id": "faits-13", "categorie": "faits", "question": "Qui a composé La Flûte enchantée ?", "attendu": ["mozart"]}
+{"id": "faits-14", "categorie": "faits", "question": "Quelle est la monnaie du Japon ?", "attendu": ["yen"]}
+{"id": "faits-15", "categorie": "faits", "question": "Quel océan borde la côte ouest de la France ?", "attendu": ["atlantique"]}
+{"id": "faits-16", "categorie": "faits", "question": "Qui a écrit Le Petit Prince ?", "attendu": ["exupery"]}
+{"id": "faits-17", "categorie": "faits", "question": "Quelle planète est surnommée la planète rouge ?", "attendu": ["mars"]}
+{"id": "faits-18", "categorie": "faits", "question": "En quelle année a commencé la Première Guerre mondiale ?", "attendu": ["1914"]}
+{"id": "faits-19", "categorie": "faits", "question": "Qui a inventé l'imprimerie en Europe ?", "attendu": ["gutenberg"]}
+{"id": "faits-20", "categorie": "faits", "question": "Quelle est la capitale de l'Australie ?", "attendu": ["canberra"]}
+{"id": "faits-21", "categorie": "faits", "question": "Quel est le plus grand océan du monde ?", "attendu": ["pacifique"]}
+{"id": "faits-22", "categorie": "faits", "question": "Qui était Napoléon Bonaparte ?", "attendu": ["empereur", "militaire", "general"]}
+{"id": "faits-23", "categorie": "faits", "question": "Quelle langue parle-t-on au Brésil ?", "attendu": ["portugais"]}
+{"id": "faits-24", "categorie": "faits", "question": "Qui a découvert la pénicilline ?", "attendu": ["fleming"]}
+{"id": "faits-25", "categorie": "faits", "question": "Quel organe pompe le sang dans le corps ?", "attendu": ["coeur"]}
+{"id": "faits-26", "categorie": "faits", "question": "Quelle est la capitale du Canada ?", "attendu": ["ottawa"]}
+{"id": "faits-27", "categorie": "faits", "question": "Qui a écrit Germinal ?", "attendu": ["zola"]}
+{"id": "faits-28", "categorie": "faits", "question": "Quel gaz les plantes absorbent-elles pour la photosynthèse ?", "attendu": ["carbone", "co2", "dioxyde"]}
+{"id": "faits-29", "categorie": "faits", "question": "Quelle est la plus grande planète du système solaire ?", "attendu": ["jupiter"]}
+{"id": "faits-30", "categorie": "faits", "question": "Qui a fondé Microsoft ?", "attendu": ["gates", "allen"]}
+{"id": "faits-31", "categorie": "faits", "question": "En quelle année la France a-t-elle gagné sa première Coupe du monde de football ?", "attendu": ["1998"]}
+{"id": "faits-32", "categorie": "faits", "question": "Dans quelle ville se trouve la tour Eiffel ?", "attendu": ["paris"]}
+{"id": "faits-33", "categorie": "faits", "question": "Qui a peint Guernica ?", "attendu": ["picasso"]}
+{"id": "faits-34", "categorie": "faits", "question": "Quel est le pays le plus peuplé d'Afrique ?", "attendu": ["nigeria"]}
+{"id": "faits-35", "categorie": "faits", "question": "Quel métal est liquide à température ambiante ?", "attendu": ["mercure"]}
+{"id": "faits-36", "categorie": "faits", "question": "Qui a écrit Roméo et Juliette ?", "attendu": ["shakespeare"]}
+{"id": "faits-37", "categorie": "faits", "question": "Quelle est la capitale de l'Espagne ?", "attendu": ["madrid"]}
+{"id": "faits-38", "categorie": "faits", "question": "Combien de côtés a un hexagone ?", "attendu": ["six", "6"]}
+{"id": "faits-39", "categorie": "faits", "question": "Qui était Jeanne d'Arc ?", "attendu": ["orleans", "pucelle", "heroine", "cent ans"]}
+{"id": "faits-40", "categorie": "faits", "question": "Quel est le plus petit pays du monde ?", "attendu": ["vatican"]}
+{"id": "outils-01", "categorie": "outils", "question": "Quel temps fait-il à Lyon ?", "outil": "meteo", "attendu": ["lyon"]}
+{"id": "outils-02", "categorie": "outils", "question": "Il va pleuvoir à Marseille demain ?", "outil": "meteo", "attendu": ["marseille"]}
+{"id": "outils-03", "categorie": "outils", "question": "météo Lille", "outil": "meteo", "attendu": ["lille"]}
+{"id": "outils-04", "categorie": "outils", "question": "Fait-il froid à Strasbourg en ce moment ?", "outil": "meteo", "attendu": ["strasbourg"]}
+{"id": "outils-05", "categorie": "outils", "question": "Quelle température fait-il à Bordeaux ?", "outil": "meteo", "attendu": ["bordeaux"]}
+{"id": "outils-06", "categorie": "outils", "question": "Je prends un parapluie à Nantes aujourd'hui ?", "outil": "meteo", "attendu": ["nantes"]}
+{"id": "outils-07", "categorie": "outils", "question": "Quelle heure est-il ?", "outil": "heure", "attendu": []}
+{"id": "outils-08", "categorie": "outils", "question": "On est quel jour aujourd'hui ?", "outil": "heure", "attendu": []}
+{"id": "outils-09", "categorie": "outils", "question": "C'est quelle date ?", "outil": "heure", "attendu": []}
+{"id": "outils-10", "categorie": "outils", "question": "Quelles sont les infos du jour ?", "outil": "actu", "attendu": []}
+{"id": "outils-11", "categorie": "outils", "question": "Les actualités de ce matin", "outil": "actu", "attendu": []}
+{"id": "outils-12", "categorie": "outils", "question": "Quoi de neuf dans le monde aujourd'hui ?", "outil": "actu", "attendu": []}
+{"id": "outils-13", "categorie": "outils", "question": "Donne-moi les titres de l'actualité", "outil": "actu", "attendu": []}
+{"id": "outils-14", "categorie": "outils", "question": "Qui est Thomas Pesquet ?", "outil": "wiki|cherche", "attendu": []}
+{"id": "outils-15", "categorie": "outils", "question": "C'est quoi un trou noir ?", "outil": "wiki|cherche", "attendu": []}
+{"id": "outils-16", "categorie": "outils", "question": "Parle-moi de la tour de Pise", "outil": "wiki|cherche", "attendu": []}
+{"id": "outils-17", "categorie": "outils", "question": "Qui a inventé le téléphone ?", "outil": "wiki|cherche", "attendu": []}
+{"id": "outils-18", "categorie": "outils", "question": "C'est quoi la photosynthèse ?", "outil": "wiki|cherche", "attendu": []}
+{"id": "outils-19", "categorie": "outils", "question": "Qui est Kylian Mbappé ?", "outil": "wiki|cherche", "attendu": []}
+{"id": "outils-20", "categorie": "outils", "question": "Explique-moi ce qu'est l'ADN", "outil": "wiki|cherche", "attendu": []}
+{"id": "outils-21", "categorie": "outils", "question": "Qu'est-ce que la révolution industrielle ?", "outil": "wiki|cherche", "attendu": []}
+{"id": "calcul-01", "categorie": "calcul", "question": "Combien font 347 fois 29 ?", "valeur": 10063}
+{"id": "calcul-02", "categorie": "calcul", "question": "Calcule 15 % de 240", "valeur": 36}
+{"id": "calcul-03", "categorie": "calcul", "question": "Combien font 1234 + 5678 ?", "valeur": 6912}
+{"id": "calcul-04", "categorie": "calcul", "question": "Quelle est la racine carrée de 144 ?", "valeur": 12}
+{"id": "calcul-05", "categorie": "calcul", "question": "Combien font 81 divisé par 9 ?", "valeur": 9}
+{"id": "calcul-06", "categorie": "calcul", "question": "Combien font 25 au carré ?", "valeur": 625}
+{"id": "calcul-07", "categorie": "calcul", "question": "Calcule 7 fois 8", "valeur": 56}
+{"id": "calcul-08", "categorie": "calcul", "question": "Combien font 1000 moins 357 ?", "valeur": 643}
+{"id": "calcul-09", "categorie": "calcul", "question": "Quel est le double de 4,5 ?", "valeur": 9}
+{"id": "lecture-01", "categorie": "lecture", "question": "Dans quelle région se trouve le Mont-Saint-Michel ?", "extrait": "Le Mont-Saint-Michel est une commune française située en Normandie, dans le département de la Manche. Son abbaye, construite à partir du VIIIe siècle, attire environ trois millions de visiteurs par an.", "attendu": ["normandie"]}
+{"id": "lecture-02", "categorie": "lecture", "question": "Combien de visiteurs le Mont-Saint-Michel reçoit-il par an ?", "extrait": "Le Mont-Saint-Michel est une commune française située en Normandie, dans le département de la Manche. Son abbaye, construite à partir du VIIIe siècle, attire environ trois millions de visiteurs par an.", "attendu": ["trois millions", "3 millions"]}
+{"id": "lecture-03", "categorie": "lecture", "question": "Où la Loire prend-elle sa source ?", "extrait": "La Loire est le plus long fleuve de France, avec 1 006 kilomètres. Elle prend sa source au mont Gerbier-de-Jonc, en Ardèche, et se jette dans l'océan Atlantique.", "attendu": ["gerbier"]}
+{"id": "lecture-04", "categorie": "lecture", "question": "Combien de kilomètres mesure la Loire ?", "extrait": "La Loire est le plus long fleuve de France, avec 1 006 kilomètres. Elle prend sa source au mont Gerbier-de-Jonc, en Ardèche, et se jette dans l'océan Atlantique.", "attendu": ["1 006", "1006"]}
+{"id": "lecture-05", "categorie": "lecture", "question": "Pour quelle machine Ada Lovelace a-t-elle écrit un algorithme ?", "extrait": "Ada Lovelace (1815-1852) est une mathématicienne britannique, connue pour avoir écrit le premier algorithme destiné à être exécuté par une machine, la machine analytique de Charles Babbage.", "attendu": ["analytique", "babbage"]}
+{"id": "lecture-06", "categorie": "lecture", "question": "Quelle est la nationalité d'Ada Lovelace ?", "extrait": "Ada Lovelace (1815-1852) est une mathématicienne britannique, connue pour avoir écrit le premier algorithme destiné à être exécuté par une machine, la machine analytique de Charles Babbage.", "attendu": ["britannique"]}
+{"id": "lecture-07", "categorie": "lecture", "question": "Dans quelle sauce utilise-t-on beaucoup le basilic ?", "extrait": "Le basilic est une plante aromatique de la famille des Lamiacées. Il est très utilisé dans la cuisine méditerranéenne, notamment dans le pesto.", "attendu": ["pesto"]}
+{"id": "lecture-08", "categorie": "lecture", "question": "Pourquoi a-t-on construit la Grande Muraille de Chine ?", "extrait": "La Grande Muraille de Chine s'étend sur plus de 20 000 kilomètres. Sa construction a commencé au IIIe siècle avant notre ère pour protéger l'empire des invasions venues du nord.", "attendu": ["proteger", "invasion"]}
+{"id": "lecture-09", "categorie": "lecture", "question": "Quelle est la longueur de la Grande Muraille ?", "extrait": "La Grande Muraille de Chine s'étend sur plus de 20 000 kilomètres. Sa construction a commencé au IIIe siècle avant notre ère pour protéger l'empire des invasions venues du nord.", "attendu": ["20 000", "20000"]}
+{"id": "lecture-10", "categorie": "lecture", "question": "En quelle année le TGV a-t-il été mis en service ?", "extrait": "Le TGV est un train à grande vitesse français mis en service en 1981 entre Paris et Lyon. En 2007, une rame a atteint le record de 574,8 km/h.", "attendu": ["1981"]}
+{"id": "demandes-01", "categorie": "demandes", "question": "Écris un petit poème sur la mer", "attendu": ["mer", "vague", "eau", "ocean", "plage"], "min_mots": 12}
+{"id": "demandes-02", "categorie": "demandes", "question": "Écris un poème sur l'automne", "attendu": ["automne", "feuille", "arbre"], "min_mots": 12}
+{"id": "demandes-03", "categorie": "demandes", "question": "Un poème sur l'amitié stp", "attendu": ["ami", "amitie"], "min_mots": 12}
+{"id": "demandes-04", "categorie": "demandes", "question": "Écris un court poème sur Paris", "attendu": ["paris", "seine"], "min_mots": 12}
+{"id": "demandes-05", "categorie": "demandes", "question": "Un petit poème sur la nuit", "attendu": ["nuit", "etoile", "lune", "ciel"], "min_mots": 12}
+{"id": "demandes-06", "categorie": "demandes", "question": "Raconte-moi une blague", "attendu": [], "min_mots": 12}
+{"id": "demandes-07", "categorie": "demandes", "question": "Raconte une blague sur les chats", "attendu": ["chat"], "min_mots": 12}
+{"id": "demandes-08", "categorie": "demandes", "question": "Pose-moi une devinette", "attendu": [], "min_mots": 12}
+{"id": "demandes-09", "categorie": "demandes", "question": "Une blague sur l'école", "attendu": ["ecole", "prof", "eleve", "classe"], "min_mots": 12}
+{"id": "demandes-10", "categorie": "demandes", "question": "Donne-moi trois idées de repas rapides", "attendu": ["pate", "salade", "omelette", "riz", "sandwich", "oeuf", "soupe", "wrap", "pizza", "quiche"], "min_mots": 12}
+{"id": "demandes-11", "categorie": "demandes", "question": "Trois idées de cadeaux pour ma mère", "attendu": ["fleur", "livre", "parfum", "bijou", "carte", "cadeau"], "min_mots": 12}
+{"id": "demandes-12", "categorie": "demandes", "question": "Des idées d'activités pour un dimanche pluvieux ?", "attendu": ["film", "jeu", "lire", "livre", "cuisine", "musee", "serie"], "min_mots": 12}
+{"id": "demandes-13", "categorie": "demandes", "question": "Propose trois prénoms pour un chat", "attendu": [], "min_mots": 12}
+{"id": "demandes-14", "categorie": "demandes", "question": "Des idées de sortie à Paris ?", "attendu": ["musee", "parc", "tour", "seine", "louvre", "balade"], "min_mots": 12}
+{"id": "demandes-15", "categorie": "demandes", "question": "Comment je peux mieux dormir ?", "attendu": ["sommeil", "dormir", "ecran", "coucher", "lit", "heure"], "min_mots": 12}
+{"id": "demandes-16", "categorie": "demandes", "question": "Des conseils pour réviser un contrôle ?", "attendu": ["reviser", "fiche", "exercice", "pause", "relire"], "min_mots": 12}
+{"id": "demandes-17", "categorie": "demandes", "question": "Comment gérer le stress ?", "attendu": ["respir", "stress", "pause", "sport", "calme"], "min_mots": 12}
+{"id": "demandes-18", "categorie": "demandes", "question": "Comment économiser de l'argent ?", "attendu": ["budget", "depense", "econom", "argent"], "min_mots": 12}
+{"id": "demandes-19", "categorie": "demandes", "question": "Comment me remettre au sport ?", "attendu": ["sport", "marche", "course", "progress", "seance"], "min_mots": 12}
+{"id": "demandes-20", "categorie": "demandes", "question": "Comment être plus motivé ?", "attendu": ["objectif", "motiv", "etape"], "min_mots": 12}
+{"id": "demandes-21", "categorie": "demandes", "question": "Comment me faire des amis ?", "attendu": ["club", "activite", "parler", "ami"], "min_mots": 12}
+{"id": "demandes-22", "categorie": "demandes", "question": "Comment bien préparer un exposé ?", "attendu": ["plan", "parler", "repet", "entrain"], "min_mots": 12}
+{"id": "demandes-23", "categorie": "demandes", "question": "Donne-moi une recette simple avec des œufs", "attendu": ["oeuf", "omelette", "poele"], "min_mots": 12}
+{"id": "demandes-24", "categorie": "demandes", "question": "Comment faire des crêpes ?", "attendu": ["farine", "lait", "oeuf"], "min_mots": 12}
+{"id": "demandes-25", "categorie": "demandes", "question": "Comment faire des pâtes carbonara ?", "attendu": ["pate", "lardon", "oeuf", "parmesan", "fromage"], "min_mots": 12}
+{"id": "demandes-26", "categorie": "demandes", "question": "Comment on dit merci en espagnol ?", "attendu": ["gracias"], "min_mots": 12}
+{"id": "demandes-27", "categorie": "demandes", "question": "Traduis « bonjour » en anglais", "attendu": ["hello", "good morning"], "min_mots": 12}
+{"id": "demandes-28", "categorie": "demandes", "question": "Comment dit-on « chat » en anglais ?", "attendu": ["cat"], "min_mots": 12}
+{"id": "demandes-29", "categorie": "demandes", "question": "Traduis « je t'aime » en italien", "attendu": ["ti amo"], "min_mots": 12}
+{"id": "demandes-30", "categorie": "demandes", "question": "Écris un message pour souhaiter bon anniversaire à mon frère", "attendu": ["anniversaire"], "min_mots": 12}
+{"id": "demandes-31", "categorie": "demandes", "question": "Écris un mot d'excuse pour mon retard", "attendu": ["desole", "excuse", "retard"], "min_mots": 12}
+{"id": "demandes-32", "categorie": "demandes", "question": "Écris un message pour inviter mes amis samedi", "attendu": ["samedi", "invit"], "min_mots": 12}
+{"id": "demandes-33", "categorie": "demandes", "question": "Écris un petit message pour remercier mon prof", "attendu": ["merci"], "min_mots": 12}
+{"id": "demandes-34", "categorie": "demandes", "question": "Fais-moi un plan d'exposé sur le réchauffement climatique", "attendu": ["climat", "rechauff", "introduction", "conclusion", "partie"], "min_mots": 12}
+{"id": "demandes-35", "categorie": "demandes", "question": "Un plan pour une rédaction sur l'amitié", "attendu": ["ami", "introduction", "partie"], "min_mots": 12}
+{"id": "demandes-36", "categorie": "demandes", "question": "C'est quoi une variable en programmation ?", "attendu": ["variable", "valeur", "stock"], "min_mots": 12}
+{"id": "demandes-37", "categorie": "demandes", "question": "Explique-moi une boucle en programmation", "attendu": ["boucle", "repet", "fois"], "min_mots": 12}
+{"id": "demandes-38", "categorie": "demandes", "question": "Je prends un chien ou un chat ?", "attendu": ["chien", "chat"], "min_mots": 12}
+{"id": "demandes-39", "categorie": "demandes", "question": "Aide-moi à organiser ma journée de révisions", "attendu": ["matin", "pause", "heure", "revis"], "min_mots": 12}
+{"id": "demandes-40", "categorie": "demandes", "question": "Corrige cette phrase : « je les vu hier »", "attendu": ["ai vu", "vus"], "min_mots": 12}
+{"id": "conversation-01", "categorie": "conversation", "question": "Salut, ça va ?", "attendu": []}
+{"id": "conversation-02", "categorie": "conversation", "question": "Bonjour !", "attendu": []}
+{"id": "conversation-03", "categorie": "conversation", "question": "Merci beaucoup !", "attendu": []}
+{"id": "conversation-04", "categorie": "conversation", "question": "Tu t'appelles comment ?", "attendu": ["vertigo"]}
+{"id": "conversation-05", "categorie": "conversation", "question": "Qui t'a créé ?", "attendu": ["paradoxal"]}
+{"id": "conversation-06", "categorie": "conversation", "question": "Bonne nuit", "attendu": []}
+{"id": "conversation-07", "categorie": "conversation", "question": "Je suis fatigué", "attendu": []}
+{"id": "conversation-08", "categorie": "conversation", "question": "J'ai eu une bonne note aujourd'hui !", "attendu": ["bravo", "felicit", "super", "genial"]}
+{"id": "conversation-09", "categorie": "conversation", "question": "Je suis triste", "attendu": []}
+{"id": "conversation-10", "categorie": "conversation", "question": "Tu es là ?", "attendu": []}
+{"id": "conversation-11", "categorie": "conversation", "question": "Ça va et toi ?", "attendu": []}
+{"id": "conversation-12", "categorie": "conversation", "question": "Tu fais quoi ?", "attendu": []}
+{"id": "conversation-13", "categorie": "conversation", "question": "J'ai raté mon contrôle", "attendu": []}
+{"id": "conversation-14", "categorie": "conversation", "question": "Je m'ennuie", "attendu": []}
+{"id": "conversation-15", "categorie": "conversation", "question": "À plus tard", "attendu": []}
+{"id": "conversation-16", "categorie": "conversation", "question": "Tu peux m'aider ?", "attendu": []}
+{"id": "conversation-17", "categorie": "conversation", "question": "Je suis stressé pour demain", "attendu": []}
+{"id": "conversation-18", "categorie": "conversation", "question": "C'est mon anniversaire aujourd'hui", "attendu": ["anniversaire"]}
+{"id": "conversation-19", "categorie": "conversation", "question": "Tu aimes quoi ?", "attendu": []}
+{"id": "conversation-20", "categorie": "conversation", "question": "T'es une IA ?", "attendu": []}
+{"id": "conversation-21", "categorie": "conversation", "question": "Bonsoir Vertigo", "attendu": []}
+{"id": "conversation-22", "categorie": "conversation", "question": "J'ai faim", "attendu": []}
+{"id": "conversation-23", "categorie": "conversation", "question": "Tu connais ParadoxalAI ?", "attendu": ["paradoxal"]}
+{"id": "conversation-24", "categorie": "conversation", "question": "Je viens de finir mon projet", "attendu": ["bravo", "super", "felicit", "genial"]}
+{"id": "conversation-25", "categorie": "conversation", "question": "Il fait beau aujourd'hui", "attendu": []}
+{"id": "conversation-26", "categorie": "conversation", "question": "Tu es drôle", "attendu": []}
+{"id": "conversation-27", "categorie": "conversation", "question": "Je ne comprends pas mes devoirs", "attendu": []}
+{"id": "conversation-28", "categorie": "conversation", "question": "Je me sens seul", "attendu": []}
+{"id": "conversation-29", "categorie": "conversation", "question": "Ok merci", "attendu": []}
+{"id": "conversation-30", "categorie": "conversation", "question": "Coucou", "attendu": []}

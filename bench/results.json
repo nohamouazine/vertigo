@@ -1,0 +1,46 @@
+{
+ "total": 12.5,
+ "categories": {
+  "faits": 75,
+  "outils": 0,
+  "calcul": 0,
+  "lecture": 0,
+  "demandes": 0,
+  "conversation": 0
+ },
+ "seconds": 36,
+ "results": [
+  {
+   "id": "faits-01",
+   "categorie": "faits",
+   "question": "Quelle est la capitale de l'Italie ?",
+   "reponse": "[outil:cherche]",
+   "finale": "La capitale de l'Italie est actuellement Rome.",
+   "ok": true
+  },
+  {
+   "id": "faits-02",
+   "categorie": "faits",
+   "question": "Qui a peint la Joconde ?",
+   "reponse": "[outil:cherche]",
+   "finale": "La Joconde du musée du Prado est une copie du tableau de Léonard de Vinci, peinte à l'huile sur panneau de noyer.",
+   "ok": true
+  },
+  {
+   "id": "faits-03",
+   "categorie": "faits",
+   "question": "En quelle année a eu lieu la prise de la Bastille ?",
+   "reponse": "[outil:cherche]",
+   "finale": "La prise de la Bastille a eu lieu le mardi 14 juillet 1789 à Paris, pendant que les émeutiers étaient pris d'assaut par des émeutiers.",
+   "ok": true
+  },
+  {
+   "id": "faits-04",
+   "categorie": "faits",
+   "question": "Quel est le plus long fleuve de France ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Il s'agit d'un petit fleuve tranquille qui traverse la Bretagne, en Bretagne.",
+   "ok": false
+  }
+ ]
+}
