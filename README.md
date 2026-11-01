@@ -3,6 +3,9 @@
 Small French language model by [ParadoxalAI](https://paradoxalai.com). Own training code, own data, own engine.
 Runs with Node.js, no GPU, no dependency.
 
+Try it in your browser, nothing to install: https://huggingface.co/spaces/nohamouazine/vertigo-3-demo
+Weights on Hugging Face: https://huggingface.co/nohamouazine/vertigo-3
+
 When it doesn't know, it asks to read: it writes `[outil:cherche|…]`, the engine fetches the intro of the
 matching French Wikipedia article, and the answer comes with the source.
 

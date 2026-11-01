@@ -1,15 +1,31 @@
 {
   "name": "vertigo-fr",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Vertigo 3, the French language model of ParadoxalAI, with its own TypeScript engine. No dependency, no GPU.",
   "type": "module",
   "license": "Apache-2.0",
   "repository": "github:nohamouazine/vertigo",
   "homepage": "https://paradoxalai.com",
-  "keywords": ["french", "language-model", "llm", "wikipedia", "on-device"],
-  "bin": { "vertigo": "bin/vertigo.mjs" },
-  "files": ["bin", "engine", "model", "README.md", "LICENSE"],
-  "engines": { "node": ">=22.6" },
+  "keywords": [
+    "french",
+    "language-model",
+    "llm",
+    "wikipedia",
+    "on-device"
+  ],
+  "bin": {
+    "vertigo": "bin/vertigo.mjs"
+  },
+  "files": [
+    "bin",
+    "engine",
+    "model",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.6"
+  },
   "scripts": {
     "ask": "node --experimental-strip-types engine/ask.ts",
     "test": "node --experimental-strip-types engine/test.ts",
