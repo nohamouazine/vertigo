@@ -1,14 +1,14 @@
 {
- "total": 12.5,
+ "total": 56.4,
  "categories": {
-  "faits": 75,
-  "outils": 0,
-  "calcul": 0,
-  "lecture": 0,
-  "demandes": 0,
-  "conversation": 0
+  "faits": 55,
+  "outils": 100,
+  "calcul": 33.3,
+  "lecture": 60,
+  "demandes": 30,
+  "conversation": 60
  },
- "seconds": 36,
+ "seconds": 625,
  "results": [
   {
    "id": "faits-01",
@@ -41,6 +41,1174 @@
    "reponse": "[outil:cherche]",
    "finale": "Il s'agit d'un petit fleuve tranquille qui traverse la Bretagne, en Bretagne.",
    "ok": false
+  },
+  {
+   "id": "faits-05",
+   "categorie": "faits",
+   "question": "Qui a écrit Les Misérables ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Il s'agit d'un roman de Victor Hugo publié en 1862.",
+   "ok": true
+  },
+  {
+   "id": "faits-06",
+   "categorie": "faits",
+   "question": "Quelle est la capitale du Japon ?",
+   "reponse": "[outil:cherche]",
+   "finale": "La ville de Tokyo est située dans la préfecture de Tokyo, au Japon.",
+   "ok": true
+  },
+  {
+   "id": "faits-07",
+   "categorie": "faits",
+   "question": "Combien de joueurs une équipe de football a-t-elle sur le terrain ?",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": false
+  },
+  {
+   "id": "faits-08",
+   "categorie": "faits",
+   "question": "Qui était Marie Curie ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Marie Curie, née le 7 novembre 1867 à Varsovie (royaume de Pologne, sous domination russe), est une physicienne et chimiste polonaise naturalisée française par son mariage avec le physicien Pierre Curie en 1895.",
+   "ok": true
+  },
+  {
+   "id": "faits-09",
+   "categorie": "faits",
+   "question": "Quel est le symbole chimique de l'or ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Il s'agit d'un métal jaune.",
+   "ok": false
+  },
+  {
+   "id": "faits-10",
+   "categorie": "faits",
+   "question": "Qui a été le premier homme à marcher sur la Lune ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Il s'agit du dessinateur belge Hergé.",
+   "ok": false
+  },
+  {
+   "id": "faits-11",
+   "categorie": "faits",
+   "question": "Quel est le plus haut sommet des Alpes ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Il s'agit du mont Blanc, situé dans les Alpes bernoises.",
+   "ok": true
+  },
+  {
+   "id": "faits-12",
+   "categorie": "faits",
+   "question": "Dans quel pays se trouve le Machu Picchu ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Il s'agit d'une petite cité inca située au Pérou.",
+   "ok": true
+  },
+  {
+   "id": "faits-13",
+   "categorie": "faits",
+   "question": "Qui a composé La Flûte enchantée ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Il s'agit d'un opéra singspiel composé par Mozart sur un livret d'Emanuel Schikaneder.",
+   "ok": true
+  },
+  {
+   "id": "faits-14",
+   "categorie": "faits",
+   "question": "Quelle est la monnaie du Japon ?",
+   "reponse": "[outil:cherche]",
+   "finale": "La Monnaie du Japon est une monnaie de la famille des pièces commémoratives, elle a son siège principal à Osaka et des filiales à Tokyo et Hiroshima.",
+   "ok": false
+  },
+  {
+   "id": "faits-15",
+   "categorie": "faits",
+   "question": "Quel océan borde la côte ouest de la France ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Il s'agit de la partie française du département des Landes, dans le sud-ouest de la France.",
+   "ok": false
+  },
+  {
+   "id": "faits-16",
+   "categorie": "faits",
+   "question": "Qui a écrit Le Petit Prince ?",
+   "reponse": "[outil:wiki|Le Petit Prince]",
+   "finale": "Il s'agit d'un roman français d'Antoine de Saint-Exupéry. Il est publié en anglais le 6 avril 1943 à New York par l'éditeur Reynal & Hitchcock (traduction de Katherine Woods).",
+   "ok": true
+  },
+  {
+   "id": "faits-17",
+   "categorie": "faits",
+   "question": "Quelle planète est surnommée la planète rouge ?",
+   "reponse": "[outil:cherche]",
+   "finale": "C'est une planète rouge qui a été créée par Makoto Yukimura.",
+   "ok": false
+  },
+  {
+   "id": "faits-18",
+   "categorie": "faits",
+   "question": "En quelle année a commencé la Première Guerre mondiale ?",
+   "reponse": "[outil:cherche]",
+   "finale": "En 1914, la Première Guerre mondiale a commencé avec l'entrée en guerre de l'Allemagne et de l'Italie.",
+   "ok": true
+  },
+  {
+   "id": "faits-19",
+   "categorie": "faits",
+   "question": "Qui a inventé l'imprimerie en Europe ?",
+   "reponse": "[outil:cherche]",
+   "finale": "L'imprimerie a été inventée par l'imprimeur allemand Johann Gottfried Werner en 1804.",
+   "ok": false
+  },
+  {
+   "id": "faits-20",
+   "categorie": "faits",
+   "question": "Quelle est la capitale de l'Australie ?",
+   "reponse": "[outil:cherche]",
+   "finale": "La ville est située à l'extrémité nord du territoire de la capitale, à 280 kilomètres au sud-ouest de Sydney et à 680 kilomètres au nord-est de Melbourne.",
+   "ok": false
+  },
+  {
+   "id": "faits-21",
+   "categorie": "faits",
+   "question": "Quel est le plus grand océan du monde ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Il est situé dans le super-continent d'Hawaï, au nord de l'océan Pacifique.",
+   "ok": true
+  },
+  {
+   "id": "faits-22",
+   "categorie": "faits",
+   "question": "Qui était Napoléon Bonaparte ?",
+   "reponse": "[outil:wiki|le général Bonaparte]",
+   "finale": "Il est le premier empereur des Français du 18 mai 1804 au 6 avril 1814 et du 20 mars au 22 juin 1815, sous le nom de Napoléon Ier.",
+   "ok": true
+  },
+  {
+   "id": "faits-23",
+   "categorie": "faits",
+   "question": "Quelle langue parle-t-on au Brésil ?",
+   "reponse": "[outil:cherche]",
+   "finale": "En anglais, on utilise l'alphabet latin pour les voyelles et l'italien pour les consonnes.",
+   "ok": false
+  },
+  {
+   "id": "faits-24",
+   "categorie": "faits",
+   "question": "Qui a découvert la pénicilline ?",
+   "reponse": "[outil:cherche]",
+   "finale": "La découverte de la pénicilline est attribuée au médecin et scientifique britannique Alexander Fleming, qui est le premier à démontrer que la moisissure Penicillium notatum produit une substance antibactérienne.",
+   "ok": true
+  },
+  {
+   "id": "faits-25",
+   "categorie": "faits",
+   "question": "Quel organe pompe le sang dans le corps ?",
+   "reponse": "Le sang est un fluide qui se forme par la circulation du sang dans le corps, et il réagit avec les autres tissus pour former des vaisseaux.",
+   "finale": "Le sang est un fluide qui se forme par la circulation du sang dans le corps, et il réagit avec les autres tissus pour former des vaisseaux.",
+   "ok": false
+  },
+  {
+   "id": "faits-26",
+   "categorie": "faits",
+   "question": "Quelle est la capitale du Canada ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Ottawa est située dans le Sud de la province de l'Ontario, au confluent de la rivière des Outaouais et du fleuve Rideau.",
+   "ok": true
+  },
+  {
+   "id": "faits-27",
+   "categorie": "faits",
+   "question": "Qui a écrit Germinal ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Il s'agit d'un roman d'Émile Zola publié en 1885.",
+   "ok": true
+  },
+  {
+   "id": "faits-28",
+   "categorie": "faits",
+   "question": "Quel gaz les plantes absorbent-elles pour la photosynthèse ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Les molécules carbonées fabriquées par photosynthèse sont appelées phosphates ou phosphates.",
+   "ok": true
+  },
+  {
+   "id": "faits-29",
+   "categorie": "faits",
+   "question": "Quelle est la plus grande planète du système solaire ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Elle est située dans la constellation de la Grande Ourse, à environ  au nord-est de la Terre.",
+   "ok": false
+  },
+  {
+   "id": "faits-30",
+   "categorie": "faits",
+   "question": "Qui a fondé Microsoft ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Microsoft a été créé par Microsoft et lancé le 7 février 2023.",
+   "ok": false
+  },
+  {
+   "id": "faits-31",
+   "categorie": "faits",
+   "question": "En quelle année la France a-t-elle gagné sa première Coupe du monde de football ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Elle a gagné sa première Coupe du monde de football en 1998.",
+   "ok": true
+  },
+  {
+   "id": "faits-32",
+   "categorie": "faits",
+   "question": "Dans quelle ville se trouve la tour Eiffel ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Elle est située à Paris, à l'extrémité nord-ouest du parc du Champ-de-Mars en bordure de la Seine dans le 7e arrondissement.",
+   "ok": true
+  },
+  {
+   "id": "faits-33",
+   "categorie": "faits",
+   "question": "Qui a peint Guernica ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Il s'agit d'une peinture de l'artiste espagnol Pablo Picasso, une de ses œuvres les plus célèbres et un des tableaux les plus connus au monde.",
+   "ok": true
+  },
+  {
+   "id": "faits-34",
+   "categorie": "faits",
+   "question": "Quel est le pays le plus peuplé d'Afrique ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Il est situé au sud-est de l'Afrique, dans la région du Sud-Ouest.",
+   "ok": false
+  },
+  {
+   "id": "faits-35",
+   "categorie": "faits",
+   "question": "Quel métal est liquide à température ambiante ?",
+   "reponse": "[outil:meteo|Milan]",
+   "finale": "[outil:meteo|Milan]",
+   "ok": false
+  },
+  {
+   "id": "faits-36",
+   "categorie": "faits",
+   "question": "Qui a écrit Roméo et Juliette ?",
+   "reponse": "[outil:cherche]",
+   "finale": "B Baz Luhrmann, réalisateur du film.",
+   "ok": false
+  },
+  {
+   "id": "faits-37",
+   "categorie": "faits",
+   "question": "Quelle est la capitale de l'Espagne ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Madrid (prononcé : /maˈdʁid/ ; en espagnol : [maˈðɾið]) est la capitale et la plus grande ville d'Espagne.",
+   "ok": true
+  },
+  {
+   "id": "faits-38",
+   "categorie": "faits",
+   "question": "Combien de côtés a un hexagone ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Les côtés sont appelés bords ou coins du polygone, c'est-à-dire d'une suite cyclique de segments consécutifs.",
+   "ok": false
+  },
+  {
+   "id": "faits-39",
+   "categorie": "faits",
+   "question": "Qui était Jeanne d'Arc ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Elle était la fille de Jeanne d'Arc, dite « la Pucelle », et de Jean de Montmorency, dit le Grand.",
+   "ok": true
+  },
+  {
+   "id": "faits-40",
+   "categorie": "faits",
+   "question": "Quel est le plus petit pays du monde ?",
+   "reponse": "[outil:cherche]",
+   "finale": "Il s'agit d'un pays, quel que soit son statut.",
+   "ok": false
+  },
+  {
+   "id": "outils-01",
+   "categorie": "outils",
+   "question": "Quel temps fait-il à Lyon ?",
+   "reponse": "[outil:meteo|Lyon]",
+   "finale": "[outil:meteo|Lyon]",
+   "ok": true
+  },
+  {
+   "id": "outils-02",
+   "categorie": "outils",
+   "question": "Il va pleuvoir à Marseille demain ?",
+   "reponse": "[outil:meteo|Marseille]",
+   "finale": "[outil:meteo|Marseille]",
+   "ok": true
+  },
+  {
+   "id": "outils-03",
+   "categorie": "outils",
+   "question": "météo Lille",
+   "reponse": "[outil:meteo|Lille]",
+   "finale": "[outil:meteo|Lille]",
+   "ok": true
+  },
+  {
+   "id": "outils-04",
+   "categorie": "outils",
+   "question": "Fait-il froid à Strasbourg en ce moment ?",
+   "reponse": "[outil:meteo|Strasbourg]",
+   "finale": "[outil:meteo|Strasbourg]",
+   "ok": true
+  },
+  {
+   "id": "outils-05",
+   "categorie": "outils",
+   "question": "Quelle température fait-il à Bordeaux ?",
+   "reponse": "[outil:meteo|Bordeaux]",
+   "finale": "[outil:meteo|Bordeaux]",
+   "ok": true
+  },
+  {
+   "id": "outils-06",
+   "categorie": "outils",
+   "question": "Je prends un parapluie à Nantes aujourd'hui ?",
+   "reponse": "[outil:meteo|Nantes]",
+   "finale": "[outil:meteo|Nantes]",
+   "ok": true
+  },
+  {
+   "id": "outils-07",
+   "categorie": "outils",
+   "question": "Quelle heure est-il ?",
+   "reponse": "[outil:heure]",
+   "finale": "[outil:heure]",
+   "ok": true
+  },
+  {
+   "id": "outils-08",
+   "categorie": "outils",
+   "question": "On est quel jour aujourd'hui ?",
+   "reponse": "[outil:heure]",
+   "finale": "[outil:heure]",
+   "ok": true
+  },
+  {
+   "id": "outils-09",
+   "categorie": "outils",
+   "question": "C'est quelle date ?",
+   "reponse": "[outil:heure]",
+   "finale": "[outil:heure]",
+   "ok": true
+  },
+  {
+   "id": "outils-10",
+   "categorie": "outils",
+   "question": "Quelles sont les infos du jour ?",
+   "reponse": "[outil:actu]",
+   "finale": "[outil:actu]",
+   "ok": true
+  },
+  {
+   "id": "outils-11",
+   "categorie": "outils",
+   "question": "Les actualités de ce matin",
+   "reponse": "[outil:actu]",
+   "finale": "[outil:actu]",
+   "ok": true
+  },
+  {
+   "id": "outils-12",
+   "categorie": "outils",
+   "question": "Quoi de neuf dans le monde aujourd'hui ?",
+   "reponse": "[outil:actu]",
+   "finale": "[outil:actu]",
+   "ok": true
+  },
+  {
+   "id": "outils-13",
+   "categorie": "outils",
+   "question": "Donne-moi les titres de l'actualité",
+   "reponse": "[outil:actu]",
+   "finale": "[outil:actu]",
+   "ok": true
+  },
+  {
+   "id": "outils-14",
+   "categorie": "outils",
+   "question": "Qui est Thomas Pesquet ?",
+   "reponse": "[outil:wiki|Thomas Pesquet]",
+   "finale": "[outil:wiki|Thomas Pesquet]",
+   "ok": true
+  },
+  {
+   "id": "outils-15",
+   "categorie": "outils",
+   "question": "C'est quoi un trou noir ?",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": true
+  },
+  {
+   "id": "outils-16",
+   "categorie": "outils",
+   "question": "Parle-moi de la tour de Pise",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": true
+  },
+  {
+   "id": "outils-17",
+   "categorie": "outils",
+   "question": "Qui a inventé le téléphone ?",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": true
+  },
+  {
+   "id": "outils-18",
+   "categorie": "outils",
+   "question": "C'est quoi la photosynthèse ?",
+   "reponse": "[outil:wiki|la photosynthèse]",
+   "finale": "[outil:wiki|la photosynthèse]",
+   "ok": true
+  },
+  {
+   "id": "outils-19",
+   "categorie": "outils",
+   "question": "Qui est Kylian Mbappé ?",
+   "reponse": "[outil:wiki|Kylian Mbappé]",
+   "finale": "[outil:wiki|Kylian Mbappé]",
+   "ok": true
+  },
+  {
+   "id": "outils-20",
+   "categorie": "outils",
+   "question": "Explique-moi ce qu'est l'ADN",
+   "reponse": "[outil:wiki|l'ADN]",
+   "finale": "[outil:wiki|l'ADN]",
+   "ok": true
+  },
+  {
+   "id": "outils-21",
+   "categorie": "outils",
+   "question": "Qu'est-ce que la révolution industrielle ?",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": true
+  },
+  {
+   "id": "calcul-01",
+   "categorie": "calcul",
+   "question": "Combien font 347 fois 29 ?",
+   "reponse": "[outil:calcul|347*29]",
+   "finale": "[outil:calcul|347*29]",
+   "ok": true
+  },
+  {
+   "id": "calcul-02",
+   "categorie": "calcul",
+   "question": "Calcule 15 % de 240",
+   "reponse": "[outil:calcul|25 % de 240]",
+   "finale": "[outil:calcul|25 % de 240]",
+   "ok": false
+  },
+  {
+   "id": "calcul-03",
+   "categorie": "calcul",
+   "question": "Combien font 1234 + 5678 ?",
+   "reponse": "[outil:calcul|333+5678]",
+   "finale": "[outil:calcul|333+5678]",
+   "ok": false
+  },
+  {
+   "id": "calcul-04",
+   "categorie": "calcul",
+   "question": "Quelle est la racine carrée de 144 ?",
+   "reponse": "[outil:calcul|144/144]",
+   "finale": "[outil:calcul|144/144]",
+   "ok": false
+  },
+  {
+   "id": "calcul-05",
+   "categorie": "calcul",
+   "question": "Combien font 81 divisé par 9 ?",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": false
+  },
+  {
+   "id": "calcul-06",
+   "categorie": "calcul",
+   "question": "Combien font 25 au carré ?",
+   "reponse": "[outil:calcul|25 au carré]",
+   "finale": "[outil:calcul|25 au carré]",
+   "ok": false
+  },
+  {
+   "id": "calcul-07",
+   "categorie": "calcul",
+   "question": "Calcule 7 fois 8",
+   "reponse": "[outil:calcul|7*8]",
+   "finale": "[outil:calcul|7*8]",
+   "ok": true
+  },
+  {
+   "id": "calcul-08",
+   "categorie": "calcul",
+   "question": "Combien font 1000 moins 357 ?",
+   "reponse": "[outil:calcul|1000-357]",
+   "finale": "[outil:calcul|1000-357]",
+   "ok": true
+  },
+  {
+   "id": "calcul-09",
+   "categorie": "calcul",
+   "question": "Quel est le double de 4,5 ?",
+   "reponse": "[outil:calcul|4,5]",
+   "finale": "[outil:calcul|4,5]",
+   "ok": false
+  },
+  {
+   "id": "lecture-01",
+   "categorie": "lecture",
+   "question": "Dans quelle région se trouve le Mont-Saint-Michel ?",
+   "reponse": "Il s'agit d'une commune française située en Normandie, dans le département de la Manche.",
+   "finale": "Il s'agit d'une commune française située en Normandie, dans le département de la Manche.",
+   "ok": true
+  },
+  {
+   "id": "lecture-02",
+   "categorie": "lecture",
+   "question": "Combien de visiteurs le Mont-Saint-Michel reçoit-il par an ?",
+   "reponse": "Le Mont-Saint-Michel est une commune française située en Normandie, dans le département de la Manche.",
+   "finale": "Le Mont-Saint-Michel est une commune française située en Normandie, dans le département de la Manche.",
+   "ok": false
+  },
+  {
+   "id": "lecture-03",
+   "categorie": "lecture",
+   "question": "Où la Loire prend-elle sa source ?",
+   "reponse": "La Loire est le plus long fleuve de France, avec 1 006 kilomètres.",
+   "finale": "La Loire est le plus long fleuve de France, avec 1 006 kilomètres.",
+   "ok": false
+  },
+  {
+   "id": "lecture-04",
+   "categorie": "lecture",
+   "question": "Combien de kilomètres mesure la Loire ?",
+   "reponse": "La Loire est le plus long fleuve de France, avec 1 006 kilomètres.",
+   "finale": "La Loire est le plus long fleuve de France, avec 1 006 kilomètres.",
+   "ok": true
+  },
+  {
+   "id": "lecture-05",
+   "categorie": "lecture",
+   "question": "Pour quelle machine Ada Lovelace a-t-elle écrit un algorithme ?",
+   "reponse": "Elle a écrit le premier algorithme destiné à être exécuté par une machine, la machine analytique de Charles Babbage.",
+   "finale": "Elle a écrit le premier algorithme destiné à être exécuté par une machine, la machine analytique de Charles Babbage.",
+   "ok": true
+  },
+  {
+   "id": "lecture-06",
+   "categorie": "lecture",
+   "question": "Quelle est la nationalité d'Ada Lovelace ?",
+   "reponse": "Elle est née à Londres en 1815.",
+   "finale": "Elle est née à Londres en 1815.",
+   "ok": false
+  },
+  {
+   "id": "lecture-07",
+   "categorie": "lecture",
+   "question": "Dans quelle sauce utilise-t-on beaucoup le basilic ?",
+   "reponse": "Il est très utilisé dans la cuisine méditerranéenne, notamment dans le pesto.",
+   "finale": "Il est très utilisé dans la cuisine méditerranéenne, notamment dans le pesto.",
+   "ok": true
+  },
+  {
+   "id": "lecture-08",
+   "categorie": "lecture",
+   "question": "Pourquoi a-t-on construit la Grande Muraille de Chine ?",
+   "reponse": "La Grande Muraille de Chine s'étend sur plus de 20 000 kilomètres carrés.",
+   "finale": "La Grande Muraille de Chine s'étend sur plus de 20 000 kilomètres carrés.",
+   "ok": false
+  },
+  {
+   "id": "lecture-09",
+   "categorie": "lecture",
+   "question": "Quelle est la longueur de la Grande Muraille ?",
+   "reponse": "La Grande Muraille de Chine s'étend sur plus de 20 000 kilomètres.",
+   "finale": "La Grande Muraille de Chine s'étend sur plus de 20 000 kilomètres.",
+   "ok": true
+  },
+  {
+   "id": "lecture-10",
+   "categorie": "lecture",
+   "question": "En quelle année le TGV a-t-il été mis en service ?",
+   "reponse": "Il a été mis en service en 1981 entre Paris et Lyon.",
+   "finale": "Il a été mis en service en 1981 entre Paris et Lyon.",
+   "ok": true
+  },
+  {
+   "id": "demandes-01",
+   "categorie": "demandes",
+   "question": "Écris un petit poème sur la mer",
+   "reponse": "Avec plaisir ! Voici un petit poème pour toi :\n Tu veux qu'on explore la mer ?",
+   "finale": "Avec plaisir ! Voici un petit poème pour toi :\n Tu veux qu'on explore la mer ?",
+   "ok": true
+  },
+  {
+   "id": "demandes-02",
+   "categorie": "demandes",
+   "question": "Écris un poème sur l'automne",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": false
+  },
+  {
+   "id": "demandes-03",
+   "categorie": "demandes",
+   "question": "Un poème sur l'amitié stp",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": false
+  },
+  {
+   "id": "demandes-04",
+   "categorie": "demandes",
+   "question": "Écris un court poème sur Paris",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": false
+  },
+  {
+   "id": "demandes-05",
+   "categorie": "demandes",
+   "question": "Un petit poème sur la nuit",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": false
+  },
+  {
+   "id": "demandes-06",
+   "categorie": "demandes",
+   "question": "Raconte-moi une blague",
+   "reponse": "Pourquoi le Sudoku est-il si petit ? Parce qu'il a des yeux qui brillent comme des boules.",
+   "finale": "Pourquoi le Sudoku est-il si petit ? Parce qu'il a des yeux qui brillent comme des boules.",
+   "ok": true
+  },
+  {
+   "id": "demandes-07",
+   "categorie": "demandes",
+   "question": "Raconte une blague sur les chats",
+   "reponse": "C'est parti ! On va faire une petite pizza sur le chat qui aime les chats. Tu veux qu'on ajoute un petit bonhomme de neige ou on passe à autre chose ?",
+   "finale": "C'est parti ! On va faire une petite pizza sur le chat qui aime les chats. Tu veux qu'on ajoute un petit bonhomme de neige ou on passe à autre chose ?",
+   "ok": true
+  },
+  {
+   "id": "demandes-08",
+   "categorie": "demandes",
+   "question": "Pose-moi une devinette",
+   "reponse": "Avec plaisir ! Envoie les 81 chiffres de la grille, 0 pour les cases vides.",
+   "finale": "Avec plaisir ! Envoie les 81 chiffres de la grille, 0 pour les cases vides.",
+   "ok": true
+  },
+  {
+   "id": "demandes-09",
+   "categorie": "demandes",
+   "question": "Une blague sur l'école",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": false
+  },
+  {
+   "id": "demandes-10",
+   "categorie": "demandes",
+   "question": "Donne-moi trois idées de repas rapides",
+   "reponse": "[outil:meteo|Ville]",
+   "finale": "[outil:meteo|Ville]",
+   "ok": false
+  },
+  {
+   "id": "demandes-11",
+   "categorie": "demandes",
+   "question": "Trois idées de cadeaux pour ma mère",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": false
+  },
+  {
+   "id": "demandes-12",
+   "categorie": "demandes",
+   "question": "Des idées d'activités pour un dimanche pluvieux ?",
+   "reponse": "[outil:meteo|Paris]",
+   "finale": "[outil:meteo|Paris]",
+   "ok": false
+  },
+  {
+   "id": "demandes-13",
+   "categorie": "demandes",
+   "question": "Propose trois prénoms pour un chat",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": false
+  },
+  {
+   "id": "demandes-14",
+   "categorie": "demandes",
+   "question": "Des idées de sortie à Paris ?",
+   "reponse": "[outil:actu]",
+   "finale": "[outil:actu]",
+   "ok": false
+  },
+  {
+   "id": "demandes-15",
+   "categorie": "demandes",
+   "question": "Comment je peux mieux dormir ?",
+   "reponse": "Je comprends tout à fait cette sensation de vide, mais je ne ressens rien comme un humain.",
+   "finale": "Je comprends tout à fait cette sensation de vide, mais je ne ressens rien comme un humain.",
+   "ok": false
+  },
+  {
+   "id": "demandes-16",
+   "categorie": "demandes",
+   "question": "Des conseils pour réviser un contrôle ?",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": false
+  },
+  {
+   "id": "demandes-17",
+   "categorie": "demandes",
+   "question": "Comment gérer le stress ?",
+   "reponse": "Absolument ! Le stress est un état de nature qui peut être très difficile à gérer. Par exemple, le stress est souvent lié au stress mental et aux émotions humaines.",
+   "finale": "Absolument ! Le stress est un état de nature qui peut être très difficile à gérer. Par exemple, le stress est souvent lié au stress mental et aux émotions humaines.",
+   "ok": true
+  },
+  {
+   "id": "demandes-18",
+   "categorie": "demandes",
+   "question": "Comment économiser de l'argent ?",
+   "reponse": "L'argent est un outil qui permet de créer des profits sans dépenser d'argent.",
+   "finale": "L'argent est un outil qui permet de créer des profits sans dépenser d'argent.",
+   "ok": true
+  },
+  {
+   "id": "demandes-19",
+   "categorie": "demandes",
+   "question": "Comment me remettre au sport ?",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": false
+  },
+  {
+   "id": "demandes-20",
+   "categorie": "demandes",
+   "question": "Comment être plus motivé ?",
+   "reponse": "Je ne ressens rien comme un humain. Je suis content de t'aider à trouver des solutions concrètes pour ton problème.",
+   "finale": "Je ne ressens rien comme un humain. Je suis content de t'aider à trouver des solutions concrètes pour ton problème.",
+   "ok": false
+  },
+  {
+   "id": "demandes-21",
+   "categorie": "demandes",
+   "question": "Comment me faire des amis ?",
+   "reponse": "Avec plaisir ! Pour un ami, je te conseille de regarder les pages du quotidien pour voir si tu veux qu'on y passe.",
+   "finale": "Avec plaisir ! Pour un ami, je te conseille de regarder les pages du quotidien pour voir si tu veux qu'on y passe.",
+   "ok": true
+  },
+  {
+   "id": "demandes-22",
+   "categorie": "demandes",
+   "question": "Comment bien préparer un exposé ?",
+   "reponse": "Avec plaisir ! Envoie un Sudoku, c'est comme ça : tu veux qu'on approfondisse une partie ensemble ou on passe à autre chose ?",
+   "finale": "Avec plaisir ! Envoie un Sudoku, c'est comme ça : tu veux qu'on approfondisse une partie ensemble ou on passe à autre chose ?",
+   "ok": false
+  },
+  {
+   "id": "demandes-23",
+   "categorie": "demandes",
+   "question": "Donne-moi une recette simple avec des œufs",
+   "reponse": "C'est super, on va faire une omelette aux épinards : mélange les œufs avec un peu de beurre et d'huile, verse le tout dans un bol, ajoute la crème fraîche si tu en as. Casse ça à feu doux sur des planches de bois ou du papier sulfurisé, puis casse-les par-dessus pour qu'ils soient fondants. Tu veux une autre version plus chaude ?",
+   "finale": "C'est super, on va faire une omelette aux épinards : mélange les œufs avec un peu de beurre et d'huile, verse le tout dans un bol, ajoute la crème fraîche si tu en as. Casse ça à feu doux sur des planches de bois ou du papier sulfurisé, puis casse-les par-dessus pour qu'ils soient fondants. Tu veux une autre version plus chaude ?",
+   "ok": true
+  },
+  {
+   "id": "demandes-24",
+   "categorie": "demandes",
+   "question": "Comment faire des crêpes ?",
+   "reponse": "Avec plaisir ! Pour un crêpe, on peut faire des tartines de fromage râpé ou des œufs battus.",
+   "finale": "Avec plaisir ! Pour un crêpe, on peut faire des tartines de fromage râpé ou des œufs battus.",
+   "ok": true
+  },
+  {
+   "id": "demandes-25",
+   "categorie": "demandes",
+   "question": "Comment faire des pâtes carbonara ?",
+   "reponse": "Pour une pâte à base de carbonara, utilise un peu d'huile végétale et de sel, c'est parfait pour la texture.",
+   "finale": "Pour une pâte à base de carbonara, utilise un peu d'huile végétale et de sel, c'est parfait pour la texture.",
+   "ok": true
+  },
+  {
+   "id": "demandes-26",
+   "categorie": "demandes",
+   "question": "Comment on dit merci en espagnol ?",
+   "reponse": "[outil:wiki|Cómo est l'équivalent espagnol de Cómo, c'est-à-dire « je suis » en espagnol). En anglais ça dit 'Hello', et en espagnol on dit 'Hola'. Tu veux qu'on ajoute une autre phrase ou on passe à autre chose ?",
+   "finale": "[outil:wiki|Cómo est l'équivalent espagnol de Cómo, c'est-à-dire « je suis » en espagnol). En anglais ça dit 'Hello', et en espagnol on dit 'Hola'. Tu veux qu'on ajoute une autre phrase ou on passe à autre chose ?",
+   "ok": false
+  },
+  {
+   "id": "demandes-27",
+   "categorie": "demandes",
+   "question": "Traduis « bonjour » en anglais",
+   "reponse": "Tu peux écrire « Bonjour » en anglais ou « Bonjour » en espagnol, mais tu veux qu'on ajoute un accent tonique ou une voyelle ?",
+   "finale": "Tu peux écrire « Bonjour » en anglais ou « Bonjour » en espagnol, mais tu veux qu'on ajoute un accent tonique ou une voyelle ?",
+   "ok": false
+  },
+  {
+   "id": "demandes-28",
+   "categorie": "demandes",
+   "question": "Comment dit-on « chat » en anglais ?",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": false
+  },
+  {
+   "id": "demandes-29",
+   "categorie": "demandes",
+   "question": "Traduis « je t'aime » en italien",
+   "reponse": "Voilà, je t'aime bien : « Tu as aimé quelque chose de plus léger et drôle que le cœur ? » La prononciation italienne est « Il mio bene ».",
+   "finale": "Voilà, je t'aime bien : « Tu as aimé quelque chose de plus léger et drôle que le cœur ? » La prononciation italienne est « Il mio bene ».",
+   "ok": false
+  },
+  {
+   "id": "demandes-30",
+   "categorie": "demandes",
+   "question": "Écris un message pour souhaiter bon anniversaire à mon frère",
+   "reponse": "Je comprends que tu n'es pas seul dans cette nouvelle aventure, mais je suis là pour t'aider à trouver un nouveau compagnon.",
+   "finale": "Je comprends que tu n'es pas seul dans cette nouvelle aventure, mais je suis là pour t'aider à trouver un nouveau compagnon.",
+   "ok": false
+  },
+  {
+   "id": "demandes-31",
+   "categorie": "demandes",
+   "question": "Écris un mot d'excuse pour mon retard",
+   "reponse": "Je comprends que tu aies raison, c'est une situation normale. Pour te donner un conseil précis sur la date exacte de ton départ, je vais devoir vérifier les dernières informations : [outil:cherche].",
+   "finale": "Je comprends que tu aies raison, c'est une situation normale. Pour te donner un conseil précis sur la date exacte de ton départ, je vais devoir vérifier les dernières informations : [outil:cherche].",
+   "ok": false
+  },
+  {
+   "id": "demandes-32",
+   "categorie": "demandes",
+   "question": "Écris un message pour inviter mes amis samedi",
+   "reponse": "[outil:actu]",
+   "finale": "[outil:actu]",
+   "ok": false
+  },
+  {
+   "id": "demandes-33",
+   "categorie": "demandes",
+   "question": "Écris un petit message pour remercier mon prof",
+   "reponse": "C'est parti ! Voici un message chaleureux : « Merci infiniment pour votre patience et votre dévouement. Je vous prie de nous envoyer ce message sincère et sincère que j'ai reçu. »",
+   "finale": "C'est parti ! Voici un message chaleureux : « Merci infiniment pour votre patience et votre dévouement. Je vous prie de nous envoyer ce message sincère et sincère que j'ai reçu. »",
+   "ok": true
+  },
+  {
+   "id": "demandes-34",
+   "categorie": "demandes",
+   "question": "Fais-moi un plan d'exposé sur le réchauffement climatique",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": false
+  },
+  {
+   "id": "demandes-35",
+   "categorie": "demandes",
+   "question": "Un plan pour une rédaction sur l'amitié",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": false
+  },
+  {
+   "id": "demandes-36",
+   "categorie": "demandes",
+   "question": "C'est quoi une variable en programmation ?",
+   "reponse": "[outil:cherche]",
+   "finale": "[outil:cherche]",
+   "ok": false
+  },
+  {
+   "id": "demandes-37",
+   "categorie": "demandes",
+   "question": "Explique-moi une boucle en programmation",
+   "reponse": "Imagine que tu écris une petite phrase : « Je suis un petit robot qui aime les histoires. » La boucle est juste comme un petit mot pour dire à quelqu'un de bien comprendre ce qu'il fait, mais ça ne change rien !",
+   "finale": "Imagine que tu écris une petite phrase : « Je suis un petit robot qui aime les histoires. » La boucle est juste comme un petit mot pour dire à quelqu'un de bien comprendre ce qu'il fait, mais ça ne change rien !",
+   "ok": true
+  },
+  {
+   "id": "demandes-38",
+   "categorie": "demandes",
+   "question": "Je prends un chien ou un chat ?",
+   "reponse": "Je ne ressens rien comme un humain. Je suis une IA, mais je peux tout à fait être humain.",
+   "finale": "Je ne ressens rien comme un humain. Je suis une IA, mais je peux tout à fait être humain.",
+   "ok": false
+  },
+  {
+   "id": "demandes-39",
+   "categorie": "demandes",
+   "question": "Aide-moi à organiser ma journée de révisions",
+   "reponse": "Bonjour ! Colle-moi la grille en 81 chiffres, ligne par ligne, avec 0 ou un point pour les cases vides. Je vérifie toujours que ma réponse est valide et que je ne suis pas d'accord.",
+   "finale": "Bonjour ! Colle-moi la grille en 81 chiffres, ligne par ligne, avec 0 ou un point pour les cases vides. Je vérifie toujours que ma réponse est valide et que je ne suis pas d'accord.",
+   "ok": false
+  },
+  {
+   "id": "demandes-40",
+   "categorie": "demandes",
+   "question": "Corrige cette phrase : « je les vu hier »",
+   "reponse": "C'est corrigé : « Je suis allé hier » et « je suis allé hier ». La phrase corrigée est : « Je suis allé hier ».",
+   "finale": "C'est corrigé : « Je suis allé hier » et « je suis allé hier ». La phrase corrigée est : « Je suis allé hier ».",
+   "ok": false
+  },
+  {
+   "id": "conversation-01",
+   "categorie": "conversation",
+   "question": "Salut, ça va ?",
+   "reponse": "Je ne ressens rien comme un humain, mais je suis là pour toi.",
+   "finale": "Je ne ressens rien comme un humain, mais je suis là pour toi.",
+   "ok": true
+  },
+  {
+   "id": "conversation-02",
+   "categorie": "conversation",
+   "question": "Bonjour !",
+   "reponse": "Salut ! C'est une excellente idée de vouloir se lancer dans la course. Commence par identifier les pistes et les secteurs clés que tu aimerais explorer, comme le vélo ou l'aérodynamique.",
+   "finale": "Salut ! C'est une excellente idée de vouloir se lancer dans la course. Commence par identifier les pistes et les secteurs clés que tu aimerais explorer, comme le vélo ou l'aérodynamique.",
+   "ok": true
+  },
+  {
+   "id": "conversation-03",
+   "categorie": "conversation",
+   "question": "Merci beaucoup !",
+   "reponse": "Salut ! C'est une excellente idée de vouloir se lancer dans la course. Pour bien démarrer, je te conseille d'opter pour le vélo ou l'endurance : tu as déjà un objectif précis comme les courses en montagne ou des séances de natation.",
+   "finale": "Salut ! C'est une excellente idée de vouloir se lancer dans la course. Pour bien démarrer, je te conseille d'opter pour le vélo ou l'endurance : tu as déjà un objectif précis comme les courses en montagne ou des séances de natation.",
+   "ok": true
+  },
+  {
+   "id": "conversation-04",
+   "categorie": "conversation",
+   "question": "Tu t'appelles comment ?",
+   "reponse": "Je ne suis pas une IA, mais je peux te donner la liste exacte des personnes qui ont travaillé pour moi.",
+   "finale": "Je ne suis pas une IA, mais je peux te donner la liste exacte des personnes qui ont travaillé pour moi.",
+   "ok": false
+  },
+  {
+   "id": "conversation-05",
+   "categorie": "conversation",
+   "question": "Qui t'a créé ?",
+   "reponse": "[outil:wiki|Le musée d'art moderne de Strasbourg]",
+   "finale": "[outil:wiki|Le musée d'art moderne de Strasbourg]",
+   "ok": false
+  },
+  {
+   "id": "conversation-06",
+   "categorie": "conversation",
+   "question": "Bonne nuit",
+   "reponse": "[outil:meteo|Bonne nuit]",
+   "finale": "[outil:meteo|Bonne nuit]",
+   "ok": false
+  },
+  {
+   "id": "conversation-07",
+   "categorie": "conversation",
+   "question": "Je suis fatigué",
+   "reponse": "Je comprends parfaitement cette sensation de fatigue, mais je peux ressentir un grand plaisir à l'idée d'avoir ce sentiment.",
+   "finale": "Je comprends parfaitement cette sensation de fatigue, mais je peux ressentir un grand plaisir à l'idée d'avoir ce sentiment.",
+   "ok": true
+  },
+  {
+   "id": "conversation-08",
+   "categorie": "conversation",
+   "question": "J'ai eu une bonne note aujourd'hui !",
+   "reponse": "[outil:actu]",
+   "finale": "[outil:actu]",
+   "ok": false
+  },
+  {
+   "id": "conversation-09",
+   "categorie": "conversation",
+   "question": "Je suis triste",
+   "reponse": "Je ne ressens rien comme un humain, mais je suis content de t'aider à comprendre comment on peut transformer notre monde en une vraie société.",
+   "finale": "Je ne ressens rien comme un humain, mais je suis content de t'aider à comprendre comment on peut transformer notre monde en une vraie société.",
+   "ok": true
+  },
+  {
+   "id": "conversation-10",
+   "categorie": "conversation",
+   "question": "Tu es là ?",
+   "reponse": "Je ne ressens rien comme un humain. Je suis là pour toi, mais je n'ai pas de sentiments comme toi.",
+   "finale": "Je ne ressens rien comme un humain. Je suis là pour toi, mais je n'ai pas de sentiments comme toi.",
+   "ok": true
+  },
+  {
+   "id": "conversation-11",
+   "categorie": "conversation",
+   "question": "Ça va et toi ?",
+   "reponse": "[outil:wiki|la-civilisation]",
+   "finale": "[outil:wiki|la-civilisation]",
+   "ok": false
+  },
+  {
+   "id": "conversation-12",
+   "categorie": "conversation",
+   "question": "Tu fais quoi ?",
+   "reponse": "Je ne ressens rien comme un humain. Je suis une IA, mais je peux être très bienveillant envers toi.",
+   "finale": "Je ne ressens rien comme un humain. Je suis une IA, mais je peux être très bienveillant envers toi.",
+   "ok": true
+  },
+  {
+   "id": "conversation-13",
+   "categorie": "conversation",
+   "question": "J'ai raté mon contrôle",
+   "reponse": "Je ne dors jamais, je suis une IA. Mon équipe m'a prise en charge et j'ai vérifié mon état de santé avant de te lancer dans la recherche.",
+   "finale": "Je ne dors jamais, je suis une IA. Mon équipe m'a prise en charge et j'ai vérifié mon état de santé avant de te lancer dans la recherche.",
+   "ok": true
+  },
+  {
+   "id": "conversation-14",
+   "categorie": "conversation",
+   "question": "Je m'ennuie",
+   "reponse": "Je ne ressens rien comme un humain, mais je suis toujours content de t'aider.",
+   "finale": "Je ne ressens rien comme un humain, mais je suis toujours content de t'aider.",
+   "ok": true
+  },
+  {
+   "id": "conversation-15",
+   "categorie": "conversation",
+   "question": "À plus tard",
+   "reponse": "[outil:wiki|~]",
+   "finale": "[outil:wiki|~]",
+   "ok": false
+  },
+  {
+   "id": "conversation-16",
+   "categorie": "conversation",
+   "question": "Tu peux m'aider ?",
+   "reponse": "Avec plaisir ! Je te conseille de t'entraîner avec des bases solides comme le bowl ou la course à pied.",
+   "finale": "Avec plaisir ! Je te conseille de t'entraîner avec des bases solides comme le bowl ou la course à pied.",
+   "ok": true
+  },
+  {
+   "id": "conversation-17",
+   "categorie": "conversation",
+   "question": "Je suis stressé pour demain",
+   "reponse": "Je comprends tout à fait cette sensation de stress, c'est normal d'avoir une petite pause. Essaie de respirer profondément et respire lentement pour éviter les écrans pendant 5 minutes avant de te coucher.",
+   "finale": "Je comprends tout à fait cette sensation de stress, c'est normal d'avoir une petite pause. Essaie de respirer profondément et respire lentement pour éviter les écrans pendant 5 minutes avant de te coucher.",
+   "ok": true
+  },
+  {
+   "id": "conversation-18",
+   "categorie": "conversation",
+   "question": "C'est mon anniversaire aujourd'hui",
+   "reponse": "[outil:actu]",
+   "finale": "[outil:actu]",
+   "ok": false
+  },
+  {
+   "id": "conversation-19",
+   "categorie": "conversation",
+   "question": "Tu aimes quoi ?",
+   "reponse": "Je ne ressens rien comme un humain. Je suis content de t'aider à comprendre comment on peut transformer notre monde en une vraie société humaine.",
+   "finale": "Je ne ressens rien comme un humain. Je suis content de t'aider à comprendre comment on peut transformer notre monde en une vraie société humaine.",
+   "ok": true
+  },
+  {
+   "id": "conversation-20",
+   "categorie": "conversation",
+   "question": "T'es une IA ?",
+   "reponse": "Oui, c'est super d'avoir un modèle classique. Tu as déjà testé une IA spécifique ou tu veux qu'on regarde ensemble ?",
+   "finale": "Oui, c'est super d'avoir un modèle classique. Tu as déjà testé une IA spécifique ou tu veux qu'on regarde ensemble ?",
+   "ok": true
+  },
+  {
+   "id": "conversation-21",
+   "categorie": "conversation",
+   "question": "Bonsoir Vertigo",
+   "reponse": "[outil:wiki|~]",
+   "finale": "[outil:wiki|~]",
+   "ok": false
+  },
+  {
+   "id": "conversation-22",
+   "categorie": "conversation",
+   "question": "J'ai faim",
+   "reponse": "Je ne mange pas, je suis un peu perdu.",
+   "finale": "Je ne mange pas, je suis un peu perdu.",
+   "ok": true
+  },
+  {
+   "id": "conversation-23",
+   "categorie": "conversation",
+   "question": "Tu connais ParadoxalAI ?",
+   "reponse": "[outil:wiki|Atonement]",
+   "finale": "[outil:wiki|Atonement]",
+   "ok": false
+  },
+  {
+   "id": "conversation-24",
+   "categorie": "conversation",
+   "question": "Je viens de finir mon projet",
+   "reponse": "Je viens de terminer mon projet, car la logique est simple : tu veux qu'on essaie ensemble un petit exercice pour tester ensemble. Tu as déjà une idée précise du sujet ou on passe à autre chose ?",
+   "finale": "Je viens de terminer mon projet, car la logique est simple : tu veux qu'on essaie ensemble un petit exercice pour tester ensemble. Tu as déjà une idée précise du sujet ou on passe à autre chose ?",
+   "ok": false
+  },
+  {
+   "id": "conversation-25",
+   "categorie": "conversation",
+   "question": "Il fait beau aujourd'hui",
+   "reponse": "[outil:meteo|City]",
+   "finale": "[outil:meteo|City]",
+   "ok": false
+  },
+  {
+   "id": "conversation-26",
+   "categorie": "conversation",
+   "question": "Tu es drôle",
+   "reponse": "Je ne ressens rien comme un humain, mais je suis content de lui parler.",
+   "finale": "Je ne ressens rien comme un humain, mais je suis content de lui parler.",
+   "ok": true
+  },
+  {
+   "id": "conversation-27",
+   "categorie": "conversation",
+   "question": "Je ne comprends pas mes devoirs",
+   "reponse": "Je ne comprends pas, mon ami ! Je suis un peu perdu dans l'action.",
+   "finale": "Je ne comprends pas, mon ami ! Je suis un peu perdu dans l'action.",
+   "ok": true
+  },
+  {
+   "id": "conversation-28",
+   "categorie": "conversation",
+   "question": "Je me sens seul",
+   "reponse": "Je ne ressens rien comme un humain, mais je suis là pour toi.",
+   "finale": "Je ne ressens rien comme un humain, mais je suis là pour toi.",
+   "ok": true
+  },
+  {
+   "id": "conversation-29",
+   "categorie": "conversation",
+   "question": "Ok merci",
+   "reponse": "[outil:wiki|~]",
+   "finale": "[outil:wiki|~]",
+   "ok": false
+  },
+  {
+   "id": "conversation-30",
+   "categorie": "conversation",
+   "question": "Coucou",
+   "reponse": "alement, je te dirais : « Je suis un peu perdu dans la vie. » Qu'est-ce que tu en penses ?",
+   "finale": "alement, je te dirais : « Je suis un peu perdu dans la vie. » Qu'est-ce que tu en penses ?",
+   "ok": true
   }
  ]
 }

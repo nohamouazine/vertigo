@@ -21,7 +21,7 @@ Node.js 22.6+.
 npm test                                   # engine vs training framework, same logits
 npm run ask "Pourquoi le ciel est bleu ?"
 npm run ask -- --no-wiki "Donne-moi trois idées de repas rapides"
-npm run bench                              # 150 questions, ~1h30 on a laptop
+npm run bench                              # 150 questions, up to an hour on a laptop
 ```
 
 ~60 ms/token on a MacBook, 100 MB of RAM.
@@ -41,7 +41,10 @@ trained to chat and to call its tool. Trained on one PC with an 8 GB GPU.
 
 | Model | Total | faits | outils | calcul | lecture | demandes | conversation |
 |---|---|---|---|---|---|---|---|
-| Vertigo 3 | **54.7** | 45.0 | 100.0 | 33.3 | 60.0 | 30.0 | 60.0 |
+| Vertigo 3 | **56.4** | 55.0 | 100.0 | 33.3 | 60.0 | 30.0 | 60.0 |
+
+Run of 1 November 2026 with this engine. The same model scored 54.7 in the training framework: the gap is the
+facts category, which depends on what Wikipedia returns on the day.
 
 It's small and it shows: it sometimes searches when it shouldn't, poems are short, facts from memory are
 hit or miss. The answers of the last run are in `bench/results.json`.
