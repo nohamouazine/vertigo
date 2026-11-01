@@ -1,6 +1,4 @@
-// The engine against the training framework: same tokens and same logits (within 1e-3) on the three prompts
-// of model/vectors.json, computed on the dequantized weights when the model was exported.
-//   node --experimental-strip-types engine/test.ts
+// same tokens and logits (1e-3) as the training framework on model/vectors.json
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { load } from './vertigo.ts'

@@ -1,11 +1,4 @@
-// The Vertigo tokenizer: a byte-level BPE read from tokenizer.json.
-//
-// Words are split before merging (a word with its leading space, numbers by three digits, underscores,
-// punctuation, spaces), then the merges are applied in order. engine/test.ts checks on the exported vectors
-// that the ids are exactly the ones the model was trained with.
-//
-// [^\W\d_] (a letter, or a number that is not a decimal digit) is [\p{L}\p{Nl}\p{No}] here, and [^\s\w]
-// is [^\s\p{L}\p{N}_].
+// Byte-level BPE, same split and merge order as training. Checked by engine/test.ts.
 
 const SPLIT = / ?[\p{L}\p{Nl}\p{No}]+| ?\p{Nd}{1,3}| ?_+| ?[^\s\p{L}\p{N}_]+|\s+(?!\S)|\s+/gu
 
@@ -39,7 +32,7 @@ export class Tokenizer {
     this.specialSplit = new RegExp(`(${data.specials.map(s => s.replace(/[|]/g, '\\|')).join('|')})`)
   }
 
-  // The merges of one piece: always the pair learned first, every occurrence left to right, as in bpe.py.
+  // lowest-rank pair first, all occurrences left to right
   private piece(text: string): number[] {
     const cached = this.cache.get(text)
     if (cached) return cached

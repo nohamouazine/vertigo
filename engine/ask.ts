@@ -1,7 +1,4 @@
-// Ask Vertigo from the terminal:
-//   node --experimental-strip-types engine/ask.ts "Qui a écrit Les Misérables ?"
-//   node --experimental-strip-types engine/ask.ts --no-wiki "Donne-moi trois idées de repas rapides"
-// It prints the answer as it is written, then the source it read, if any.
+// node --experimental-strip-types engine/ask.ts [--no-wiki] "question"
 import { answer, load } from './vertigo.ts'
 
 const args = process.argv.slice(2)

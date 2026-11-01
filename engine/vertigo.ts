@@ -1,8 +1,4 @@
-// Vertigo as a library: load the model folder, write an answer, read Wikipedia when the model asks for it.
-//
-// The model learnt one tool call: when it writes [outil:cherche|query] (or [outil:wiki|query]) it wants to read
-// before answering. We fetch the opening of the matching French Wikipedia article and ask again with the extract
-// in front of it: <|doc|>extract<|user|>question<|bot|>. The answer then comes with a source, which is the point.
+// load / generate / answer. When the model writes [outil:cherche|q] we fetch the fr.wikipedia intro and ask again with it.
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { joinShards, sample, seeded, VertigoModel, type Manifest } from './model.ts'
@@ -23,7 +19,6 @@ export function load(dir = join(import.meta.dirname, '..', 'model')): Engine {
 
 export type Options = { temperature?: number; topP?: number; seed?: number; maxNew?: number; onText?: (text: string) => void }
 
-/** Writes up to `maxNew` tokens after `prompt`. Temperature 0 always takes the most likely token. */
 export function generate(engine: Engine, prompt: string, { temperature = 0.5, topP = 0.9, seed = 1, maxNew = MAX_NEW, onText }: Options = {}) {
   const { model, tokenizer, end } = engine
   const session = model.session()
@@ -34,8 +29,7 @@ export function generate(engine: Engine, prompt: string, { temperature = 0.5, to
   for (const id of kept) logits = session.step(id)
   const out: number[] = []
   for (let i = 0; i < maxNew; i++) {
-    // A small model goes round in circles: the words it just wrote become less likely (×1.15), and one word
-    // never appears more than 3 times in the last 24.
+    // repetition penalty 1.15, max 3 repeats in the last 24 tokens
     const recent = out.slice(-64)
     for (const t of new Set(recent)) logits[t] = logits[t] > 0 ? logits[t] / 1.15 : logits[t] * 1.15
     const last = out.slice(-24)
@@ -53,7 +47,6 @@ export function generate(engine: Engine, prompt: string, { temperature = 0.5, to
 
 export type Page = { title: string; extract: string; url: string }
 
-/** The opening sentences of the first French Wikipedia article matching `query`. */
 export async function wikipedia(query: string): Promise<Page | null> {
   const url = 'https://fr.wikipedia.org/w/api.php?' + new URLSearchParams({ action: 'query', generator: 'search', gsrsearch: query, gsrlimit: '1',
     prop: 'extracts', exintro: '1', explaintext: '1', format: 'json' })
@@ -65,7 +58,7 @@ export async function wikipedia(query: string): Promise<Page | null> {
   return { title: page.title, extract: firstSentences(page.extract, 450), url: `https://fr.wikipedia.org/wiki/${encodeURIComponent(page.title.replace(/ /g, '_'))}` }
 }
 
-/** The opening sentences, up to `max` characters: the model reads one token at a time, a shorter extract answers sooner. */
+// cut at a sentence end, ~max chars
 export function firstSentences(text: string, max: number) {
   const clean = text.replace(/\s+/g, ' ').trim()
   if (clean.length <= max) return clean
@@ -76,7 +69,6 @@ export function firstSentences(text: string, max: number) {
 
 export type Answer = { text: string; source: Page | null; asked: string | null }
 
-/** Asks the question; reads Wikipedia if the model asks to (unless `wiki` is false). */
 export async function answer(engine: Engine, question: string, { wiki = true, seed = Date.now() % 2147483647, temperature = 0.5, lookup = wikipedia }:
   { wiki?: boolean; seed?: number; temperature?: number; lookup?: (query: string) => Promise<Page | null> } = {}): Promise<Answer> {
   const q = question.replace(/<\|[a-z]+\|>/g, '').slice(0, 1000)
@@ -87,7 +79,7 @@ export async function answer(engine: Engine, question: string, { wiki = true, se
     return { text: first.replace(TOOL, '').trim() || 'Je préfère ne pas répondre de tête à ça.', source: null, asked: call ? (call[2] ?? '').trim() : null }
   }
   const asked = (call[2] ?? '').trim()
-  // Its query must share a word with the question, otherwise the question itself is searched.
+  // query must share a word with the question, else search the question
   const words = (x: string) => new Set(x.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').match(/[a-z0-9]{4,}/g) ?? [])
   const shared = [...words(asked)].some(w => words(q).has(w))
   const query = !asked || asked === '~' || !shared ? q : asked

@@ -1,16 +1,5 @@
-// The French bench: 150 questions in six categories, scored by rules, no judge model.
-//   node --experimental-strip-types bench/score.ts            (writes bench/results.json, prints the table row)
-//   node --experimental-strip-types bench/score.ts --limit 20 (a quick look)
-//
-// faits        40  a fact; the model may read Wikipedia first (its [outil:cherche] call is honoured)
-// outils       21  the right tool call for the question (weather, time, calculator, Wikipedia...)
-// calcul        9  the exact number, computed by its calculator call or written in the answer
-// lecture      10  a question about a short text given with it
-// demandes     40  a poem, a list, a message, a translation: an actual attempt, long enough
-// conversation 30  small talk: an answer, not a refusal and not a tool call
-//
-// The score is the mean of the six category percentages. Decoding is greedy, so a run is reproducible except
-// for what Wikipedia returns on the day (looked up once and cached in bench/cache-wiki.json).
+// French bench, 150 questions, scored by rules. Greedy decoding. Wikipedia lookups cached in bench/cache-wiki.json.
+//   node --experimental-strip-types bench/score.ts [--limit N]
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { generate, load, TOOL, wikipedia, type Page } from '../engine/vertigo.ts'
@@ -27,7 +16,7 @@ const REFUS = /je ne (sais|peux)|pas encore appris|en tant qu'ia|je n'ai pas acc
 const plain = (t: string) => t.toLowerCase().replace(/’/g, "'").replace(/œ/g, 'oe').replace(/æ/g, 'ae').normalize('NFD').replace(/[̀-ͯ]/g, '')
 const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 
-/** One of the expected words is there. Short ones (« au », « 6 ») must be whole; longer ones may start a word. */
+// short keywords whole-word, longer ones as prefix
 function contains(text: string, keywords: string[]) {
   const t = plain(text)
   return keywords.some(kw => {
@@ -36,7 +25,7 @@ function contains(text: string, keywords: string[]) {
   })
 }
 
-/** A calculator expression: numbers, + - × ÷ ^ %, racine, parentheses. Nothing is executed. */
+// tiny calculator parser, no eval
 function evaluate(input: string): number | null {
   let s = input.replace(/×/g, '*').replace(/x/g, '*').replace(/÷/g, '/').replace(/,/g, '.').replace(/\^/g, '**')
   s = s.replace(/(\d+(?:\.\d+)?)\s*%\s*(?:de|of)?\s*(\d+(?:\.\d+)?)/g, '($1*$2/100)')

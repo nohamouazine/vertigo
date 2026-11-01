@@ -1,12 +1,4 @@
-// Vertigo, computed by our own TypeScript engine (no runtime, no GPU, no dependency).
-//
-// A decoder transformer: RMS norm before each block, rotary positions (RoPE, coordinates rotated by pairs),
-// a gated dense layer (SwiGLU), and a token table that is both the input and the output. The weights are stored
-// in 8 bits with one scale per row (W ≈ q × s): we keep them that way in memory (about 100 MB) and apply the
-// scale after each row's sum.
-//
-// Decoding is incremental: attention is causal, so the keys and values of earlier positions never change. Each
-// layer keeps them, and every new token costs one pass over a single position.
+// Vertigo inference in plain TypeScript. int8 weights, one scale per row. KV cache per layer.
 
 export type Manifest = {
   name: string
@@ -33,7 +25,7 @@ export type Manifest = {
 type Matrix = { q: Int8Array; s: Float32Array; rows: number; cols: number }
 type Layer = { norm1: Float32Array; qkv: Matrix; out: Matrix; norm2: Float32Array; gateUp: Matrix; down: Matrix; qn?: Float32Array; kn?: Float32Array }
 
-/** out[r] = (Σ q[r][c] · x[c]) · s[r]: the 8-bit row, then its scale. */
+// out[r] = sum(q[r][c] * x[c]) * s[r]
 function matvec(m: Matrix, x: Float32Array, out: Float32Array) {
   const { q, s, rows, cols } = m
   for (let r = 0; r < rows; r++) {
@@ -60,7 +52,7 @@ function rmsNorm(x: Float32Array, w: Float32Array, eps: number, out: Float32Arra
   return out
 }
 
-/** The concatenated shards (weights-0.bin, weights-1.bin…) as one buffer, in order. */
+// shards concatenated in order
 export function joinShards(manifest: Manifest, shards: Uint8Array[]): ArrayBuffer {
   const all = new Uint8Array(manifest.bytes)
   let at = 0
@@ -105,7 +97,7 @@ export class VertigoModel {
     }
     this.norm = vector('norm')
 
-    // Rotation angles, as rope_tables() computes them: position × base^(-2i / head size).
+    // rope: pos * base^(-2i/headSize)
     this.headDim = manifest.d / manifest.heads
     const half = this.headDim / 2
     this.cos = new Float32Array(manifest.context * half)
@@ -127,9 +119,9 @@ export class Session {
   private keys: Float32Array[]
   private values: Float32Array[]
   position = 0
-  /** The token read before the current one (0 at the start, as training pads with zeros): the bigram key. */
+  // previous token (0 at start), bigram key
   private previous = 0
-  // Scratch space, allocated once.
+  // scratch buffers
   private x: Float32Array
   private h: Float32Array
   private qkv: Float32Array
@@ -145,7 +137,7 @@ export class Session {
   constructor(model: VertigoModel) {
     this.m = model
     const { d, hidden, context, layers, vocab } = model.manifest
-    // Une mémoire par couche et par passage : avec la boucle, chaque passage voit des entrées différentes.
+    // one KV cache per layer pass
     const passes = layers * (model.manifest.repeat ?? 1)
     this.keys = Array.from({ length: passes }, () => new Float32Array(context * d))
     this.values = Array.from({ length: passes }, () => new Float32Array(context * d))
@@ -164,7 +156,7 @@ export class Session {
 
   get room() { return this.m.manifest.context - this.position }
 
-  /** Reads one token at the next position; returns the logits of the token after it. */
+  // feed one token, get logits for the next
   step(token: number): Float32Array {
     const m = this.m
     const { d, heads, hidden, normEps } = m.manifest
@@ -175,7 +167,7 @@ export class Session {
     const row = token * d, scale = m.tok.s[token]
     for (let i = 0; i < d; i++) x[i] = m.tok.q[row + i] * scale
     if (m.ngram) {
-      // (previous × 1 000 003 + token) mod N, exact in doubles (< 2^53), as training hashes the pair.
+      // (prev * 1000003 + tok) % N, exact in doubles
       const slot = (this.previous * 1_000_003 + token) % m.ngram.rows
       const nrow = slot * d, nscale = m.ngram.s[slot]
       for (let i = 0; i < d; i++) x[i] += m.ngram.q[nrow + i] * nscale
@@ -189,7 +181,7 @@ export class Session {
       matvec(layer.qkv, rmsNorm(x, layer.norm1, normEps, h), qkv)
       if (parallel) this.hp.set(h)  // the parallel block feeds the dense layer with the same normalised input
       if (layer.qn && layer.kn) {
-        // q et k normalisés tête par tête (RMS sur la taille d'une tête), before the rotation, as in training.
+        // qk-norm per head, before rope
         for (let head = 0; head < heads; head++) {
           for (const [base, w] of [[head * hd, layer.qn], [d + head * hd, layer.kn]] as const) {
             let ss = 0
@@ -199,7 +191,7 @@ export class Session {
           }
         }
       }
-      // Rotate q (0..d) and k (d..2d) by pairs, then keep k and v for the positions to come.
+      // rope on q and k, then cache k/v
       const keys = this.keys[pass], values = this.values[pass]
       for (let head = 0; head < heads; head++) {
         for (let i = 0; i < half; i++) {
@@ -252,7 +244,7 @@ export class Session {
     return matvec(m.head ?? m.tok, rmsNorm(x, m.norm, normEps, h), this.logits)
   }
 
-  /** Reads a whole prompt; returns the logits after its last token. */
+  // prefill, logits after the last token
   read(ids: number[]): Float32Array {
     let logits = this.logits
     for (const id of ids) logits = this.step(id)
@@ -260,7 +252,7 @@ export class Session {
   }
 }
 
-/** A small seeded random generator (mulberry32): the same seed gives the same answer, for tests and receipts. */
+// mulberry32
 export function seeded(seed: number) {
   let a = seed >>> 0
   return () => {
@@ -272,7 +264,7 @@ export function seeded(seed: number) {
   }
 }
 
-/** Temperature, then nucleus (top-p) sampling, Temperature 0: the most likely. */
+// temperature + top-p; temperature 0 = argmax
 export function sample(logits: Float32Array, temperature: number, topP: number, random: () => number) {
   if (temperature <= 0) {
     let best = 0
