@@ -4,13 +4,14 @@ Small French language model by [ParadoxalAI](https://paradoxalai.com). Own train
 Runs with Node.js, no GPU, no dependency.
 
 Try it in your browser, nothing to install: https://huggingface.co/spaces/nohamouazine/vertigo-3-demo
+Or in a terminal, one line: `npx vertigo-fr "Qui a écrit Les Misérables ?"`
 Weights on Hugging Face: https://huggingface.co/nohamouazine/vertigo-3
 
 When it doesn't know, it asks to read: it writes `[outil:cherche|…]`, the engine fetches the intro of the
 matching French Wikipedia article, and the answer comes with the source.
 
 ```
-$ npm run ask "Qui a écrit Les Misérables ?"
+$ npx vertigo-fr "Qui a écrit Les Misérables ?"
 Il s'agit d'un roman de Victor Hugo publié en 1862.
 
 Source : Les Misérables · https://fr.wikipedia.org/wiki/Les_Misérables
@@ -19,6 +20,13 @@ Source : Les Misérables · https://fr.wikipedia.org/wiki/Les_Misérables
 ## Run
 
 Node.js 22.6+.
+
+```bash
+npx vertigo-fr "Pourquoi le ciel est bleu ?"        # from npm, 89 MB downloaded once
+npx vertigo-fr --no-wiki "Trois idées de repas"
+```
+
+From the repo:
 
 ```bash
 npm test                                   # engine vs training framework, same logits
