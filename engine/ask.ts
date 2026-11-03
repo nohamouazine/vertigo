@@ -11,11 +11,8 @@ if (!question) {
 
 const t0 = performance.now()
 const engine = load()
-console.error(`model loaded in ${((performance.now() - t0) / 1000).toFixed(1)} s`)
-
-const t1 = performance.now()
 const result = await answer(engine, question, { wiki })
 console.log(result.text)
 if (result.source) console.log(`\nSource : ${result.source.title} · ${result.source.url}`)
 else if (result.asked) console.log(`\n(asked to read Wikipedia for « ${result.asked} », answered without it)`)
-console.error(`\n${((performance.now() - t1) / 1000).toFixed(1)} s`)
+console.error(`\n${((performance.now() - t0) / 1000).toFixed(1)} s`)

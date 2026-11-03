@@ -1,6 +1,6 @@
 {
   "name": "vertigo-fr",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Vertigo 3, the French language model of ParadoxalAI, with its own TypeScript engine. No dependency, no GPU.",
   "type": "module",
   "license": "Apache-2.0",
